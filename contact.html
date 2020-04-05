@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <title>Contact Us</title>
+            <meta charset = "UTF-8">
+            <meta name = "description" content="Contact Us">
+            <meta name= "keywords" content="HTML, CSS, Personal Information" >
+            <meta name= "Author" content= " Sartaj Tiwana">
+            <link rel="stylesheet" href="contact.css">
+            <link rel ="icon" type="image/jpg" href="images/icon.jpg">
+             <!-- minified CSS -->
+            <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+            <!-- jQuery -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+            </script>
+
+            <!-- Popper JS -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+            </script>
+
+            <!-- JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+            </script>
+        </head>
+
+        <body style="background-image: url(images/img1.jpg)">
+            <figure>
+                    <img src="images/icon.jpg" alt="" Title="Tesla" width=80 />
+                    <br/>
+            </figure>
+            <!-- sends to email-->
+            <form action= "mailto:stiwa124@mtroyal.ca" method="post" enctype="text/plain">
+            <input type="hidden" name="subject" value="Name">
+            <p>
+                <br/>
+            <fieldset class="row">
+                <legend id="color">Personal Information</legend>
+                <div class="col-sm-4 col-lg-3">
+                     <p id="color">Abreviation</p>
+                        <br/>
+                    <label>
+                    <input type="radio" name="Abbreviation" value="Mr" checked>Mr</label>
+                        <br> <label><input type="radio" name="Abbreviation" value="Ms"> Ms</label><br> 
+                        <label><input type="radio" name="Abbreviation" value="Mrs"> Mrs</label>
+                    
+                    
+                    </div>
+				<div class="col-sm-4 col-lg-3">
+                    <label> Name* <a class = "small">(ex. John)</a>:
+							<input name="fullname" type="text" size="25" value="" maxlength="25" required="">
+					</label>
+                </div>
+                <div class="col-sm-4 col-lg-3">
+                    <label> Email* <a class = "small">(john_roberto@gmail.com)</a>:
+                        <input name="email" type="email" size="35" required="" placeholder="" maxlength="35">
+                    </label>
+                </div>
+                <div class="col-sm-4 col-lg-3">
+                    <label> Phone <a class = "small">(123-123-1234)</a>:
+                        <input name="telephone" type="tel" size="25" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}" maxlength="20">
+                    </label>
+                </div>
+                <div class="col-sm-4 col-lg-3">
+                    <label style="vertical-align: top;"> Description*:
+                    <a class="small">(Enter a brief description of your case here.)</a></label>
+                    <textarea id= "description" required ="" rows="4" cols="70" placeholder=""></textarea>
+                    </div>
+                <div class="col-sm-4 col-lg-3">
+                    <label>Date Contacted*<a class = "small"> (ex. 2020-03-02)</a></label>
+                    <input name="date" type="date" required="">
+                </div>
+                <div class="col-sm-4 col-lg-3">
+                    <p id=color>*Required Fields</p>
+                </div>
+                <div class="col-sm-4 col-lg-3">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Clear"> 
+                </div>
+            </fieldset>
+                </form>
+        </body>
+</html>

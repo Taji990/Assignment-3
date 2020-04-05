@@ -1,0 +1,81 @@
+:root{
+    --vis:none;
+}
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+}
+input:focus{
+    outline: 2px solid orange;
+    background: rgb(99, 188, 209);
+    color: white;
+}
+input:hover, textarea:hover{
+        cursor: pointer;
+}
+textarea:focus{
+    outline: 2px solid orange;
+    background: rgb(99, 188, 209);
+    color: white;
+
+}
+figure {
+    padding: 5px;
+    width: 150px;
+    margin: 10px;
+    float: left;
+   }
+legend{
+    font-size: 20px;
+    font-family: 'Times New Roman';
+    color: white;
+}
+label{
+    font-family: 'Times New Roman';
+    color: white;
+}   
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: white;
+}
+.small{
+    color: #FF0000;
+    font-size: 12px;
+}
+#color{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+.acbtn{
+    background-color: rgba(34, 62, 104, 0.562);
+  color: rgb(255, 255, 255);
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+}
+.ac{
+    position: relative;
+  display: inline-block;
+}
+.dropdown-content a{
+    color: rgb(0, 0, 0);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: none;
+  position: absolute;
+  background-color: #a79b9baf;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(85, 81, 81, 0.425);
+  z-index: 1;
+}
+
+.ac:hover .dropdown-content {
+    display: block;
+}
